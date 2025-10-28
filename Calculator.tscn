@@ -1,0 +1,60 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0qq2jhi2je2j"]
+
+[ext_resource type="Script" uid="uid://tvwvsoujmpjr" path="res://Calculator.gd" id="1_4crke"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4crke")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "미니 계산기"
+
+[node name="DisplayRow" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="InputA" type="LineEdit" parent="MarginContainer/VBoxContainer/DisplayRow"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "숫자A"
+
+[node name="InputB" type="LineEdit" parent="MarginContainer/VBoxContainer/DisplayRow"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "숫자B"
+
+[node name="OpsRow" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="BtnAdd" type="Button" parent="MarginContainer/VBoxContainer/OpsRow"]
+layout_mode = 2
+text = "+"
+
+[node name="BtnSub" type="Button" parent="MarginContainer/VBoxContainer/OpsRow"]
+layout_mode = 2
+text = "-"
+
+[node name="BtnMul" type="Button" parent="MarginContainer/VBoxContainer/OpsRow"]
+layout_mode = 2
+text = "*"
+
+[node name="BtnDiv" type="Button" parent="MarginContainer/VBoxContainer/OpsRow"]
+layout_mode = 2
+text = "/"
+
+[node name="BtnClear" type="Button" parent="MarginContainer/VBoxContainer/OpsRow"]
+layout_mode = 2
+text = "Clear"

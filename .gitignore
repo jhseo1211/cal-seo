@@ -1,0 +1,19 @@
+# Godot
+.import/
+.export/
+mono/
+data_*/
+export.cfg
+export_presets.cfg
+*.tmp
+*.log
+*.db
+*.import
+*.mono
+*.scons
+*.vs
+*.user
+*.orig
+*.blend1
+.DS_Store
+
