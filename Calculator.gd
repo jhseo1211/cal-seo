@@ -112,13 +112,13 @@ func _on_equals_pressed() -> void:
 	_history.record(current_op, outcome.a, outcome.b, outcome.display_text, outcome.value)
 	_refresh_history()
 
-	input_a.text = outcome.display_text
+	input_a.text = ""
 	input_b.text = ""
 	_pending_operator = ""
-	_should_reset_input = true
+	_should_reset_input = false
 	_set_active_input(input_a)
 	input_a.grab_focus()
-	input_a.caret_column = input_a.text.length()
+	input_a.caret_column = 0
 
 func get_history() -> Array:
 	return _history.get_entries()
@@ -143,6 +143,7 @@ func _refresh_history() -> void:
 
 func _format_history_entry(entry: Dictionary) -> String:
 	var timestamp: float = float(entry.get("timestamp", Time.get_unix_time_from_system()))
+	@warning_ignore("narrowing_conversion")
 	var time_dict: Dictionary = Time.get_datetime_dict_from_unix_time(timestamp)
 	var hour := int(time_dict.get("hour", 0))
 	var minute := int(time_dict.get("minute", 0))

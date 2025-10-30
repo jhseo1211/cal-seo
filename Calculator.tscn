@@ -38,158 +38,158 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="RootRow" type="HBoxContainer" parent="MarginContainer"]
+custom_minimum_size = Vector2(640, 0)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_minimum_size = Vector2(640, 0)
 
 [node name="MainColumn" type="VBoxContainer" parent="MarginContainer/RootRow"]
+custom_minimum_size = Vector2(360, 0)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_constants/separation = 16
-custom_minimum_size = Vector2(360, 0)
 
 [node name="Title" type="Label" parent="MarginContainer/RootRow/MainColumn"]
+custom_minimum_size = Vector2(0, 48)
 layout_mode = 2
 theme = SubResource("Theme_pw31j")
 theme_override_font_sizes/font_size = 28
 text = "미니 계산기"
 horizontal_alignment = 1
-custom_minimum_size = Vector2(0, 48)
 
 [node name="DisplayRow" type="HBoxContainer" parent="MarginContainer/RootRow/MainColumn"]
+custom_minimum_size = Vector2(0, 56)
 layout_mode = 2
 theme_override_constants/separation = 12
-custom_minimum_size = Vector2(0, 56)
 
 [node name="InputA" type="LineEdit" parent="MarginContainer/RootRow/MainColumn/DisplayRow"]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
-text = "숫자A"
+placeholder_text = "숫자A"
 
 [node name="InputB" type="LineEdit" parent="MarginContainer/RootRow/MainColumn/DisplayRow"]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
-text = "숫자B"
+placeholder_text = "숫자B"
 
 [node name="KeypadColumn" type="VBoxContainer" parent="MarginContainer/RootRow/MainColumn"]
+custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 theme_override_constants/separation = 8
-custom_minimum_size = Vector2(0, 200)
 
 [node name="KeypadGrid" type="GridContainer" parent="MarginContainer/RootRow/MainColumn/KeypadColumn"]
+custom_minimum_size = Vector2(240, 192)
 layout_mode = 2
 theme = ExtResource("2_v7csn")
 columns = 3
-custom_minimum_size = Vector2(240, 192)
 
 [node name="Btn7" type="Button" parent="MarginContainer/RootRow/MainColumn/KeypadColumn/KeypadGrid"]
+custom_minimum_size = Vector2(80, 48)
 layout_mode = 2
 theme = SubResource("Theme_q5aib")
 text = "7"
-custom_minimum_size = Vector2(80, 48)
 
 [node name="Btn8" type="Button" parent="MarginContainer/RootRow/MainColumn/KeypadColumn/KeypadGrid"]
+custom_minimum_size = Vector2(80, 48)
 layout_mode = 2
 text = "8"
-custom_minimum_size = Vector2(80, 48)
 
 [node name="Btn9" type="Button" parent="MarginContainer/RootRow/MainColumn/KeypadColumn/KeypadGrid"]
+custom_minimum_size = Vector2(80, 48)
 layout_mode = 2
 text = "9"
-custom_minimum_size = Vector2(80, 48)
 
 [node name="Btn4" type="Button" parent="MarginContainer/RootRow/MainColumn/KeypadColumn/KeypadGrid"]
+custom_minimum_size = Vector2(80, 48)
 layout_mode = 2
 text = "4"
-custom_minimum_size = Vector2(80, 48)
 
 [node name="Btn5" type="Button" parent="MarginContainer/RootRow/MainColumn/KeypadColumn/KeypadGrid"]
+custom_minimum_size = Vector2(80, 48)
 layout_mode = 2
 text = "5"
-custom_minimum_size = Vector2(80, 48)
 
 [node name="Btn6" type="Button" parent="MarginContainer/RootRow/MainColumn/KeypadColumn/KeypadGrid"]
+custom_minimum_size = Vector2(80, 48)
 layout_mode = 2
 text = "6"
-custom_minimum_size = Vector2(80, 48)
 
 [node name="Btn1" type="Button" parent="MarginContainer/RootRow/MainColumn/KeypadColumn/KeypadGrid"]
+custom_minimum_size = Vector2(80, 48)
 layout_mode = 2
 text = "1"
-custom_minimum_size = Vector2(80, 48)
 
 [node name="Btn2" type="Button" parent="MarginContainer/RootRow/MainColumn/KeypadColumn/KeypadGrid"]
+custom_minimum_size = Vector2(80, 48)
 layout_mode = 2
 text = "2"
-custom_minimum_size = Vector2(80, 48)
 
 [node name="Btn3" type="Button" parent="MarginContainer/RootRow/MainColumn/KeypadColumn/KeypadGrid"]
+custom_minimum_size = Vector2(80, 48)
 layout_mode = 2
 text = "3"
-custom_minimum_size = Vector2(80, 48)
 
 [node name="Btn0" type="Button" parent="MarginContainer/RootRow/MainColumn/KeypadColumn/KeypadGrid"]
+custom_minimum_size = Vector2(80, 48)
 layout_mode = 2
 text = "0"
-custom_minimum_size = Vector2(80, 48)
 
 [node name="BtnDecimal" type="Button" parent="MarginContainer/RootRow/MainColumn/KeypadColumn/KeypadGrid"]
+custom_minimum_size = Vector2(80, 48)
 layout_mode = 2
 text = "."
-custom_minimum_size = Vector2(80, 48)
 
 [node name="BtnBackspace" type="Button" parent="MarginContainer/RootRow/MainColumn/KeypadColumn/KeypadGrid"]
+custom_minimum_size = Vector2(80, 48)
 layout_mode = 2
 text = "지우기"
-custom_minimum_size = Vector2(80, 48)
 
 [node name="OpsRow" type="HBoxContainer" parent="MarginContainer/RootRow/MainColumn"]
+custom_minimum_size = Vector2(0, 56)
 layout_mode = 2
 theme_override_constants/separation = 8
-custom_minimum_size = Vector2(0, 56)
 
 [node name="BtnAdd" type="Button" parent="MarginContainer/RootRow/MainColumn/OpsRow"]
+custom_minimum_size = Vector2(80, 48)
 layout_mode = 2
 theme = ExtResource("2_v7csn")
 theme_override_font_sizes/font_size = 25
 text = "+"
-custom_minimum_size = Vector2(80, 48)
 
 [node name="BtnSub" type="Button" parent="MarginContainer/RootRow/MainColumn/OpsRow"]
+custom_minimum_size = Vector2(80, 48)
 layout_mode = 2
 theme = ExtResource("2_v7csn")
 theme_override_font_sizes/font_size = 25
 text = "-"
-custom_minimum_size = Vector2(80, 48)
 
 [node name="BtnMul" type="Button" parent="MarginContainer/RootRow/MainColumn/OpsRow"]
+custom_minimum_size = Vector2(80, 48)
 layout_mode = 2
 theme = ExtResource("2_v7csn")
 theme_override_font_sizes/font_size = 25
 text = "*"
-custom_minimum_size = Vector2(80, 48)
 
 [node name="BtnDiv" type="Button" parent="MarginContainer/RootRow/MainColumn/OpsRow"]
+custom_minimum_size = Vector2(80, 48)
 layout_mode = 2
 theme = ExtResource("2_v7csn")
 theme_override_font_sizes/font_size = 25
 text = "/"
-custom_minimum_size = Vector2(80, 48)
 
 [node name="BtnEquals" type="Button" parent="MarginContainer/RootRow/MainColumn/OpsRow"]
+custom_minimum_size = Vector2(80, 48)
 layout_mode = 2
 theme = ExtResource("2_v7csn")
 theme_override_font_sizes/font_size = 25
 text = "="
-custom_minimum_size = Vector2(80, 48)
 
 [node name="BtnClear" type="Button" parent="MarginContainer/RootRow/MainColumn/OpsRow"]
+custom_minimum_size = Vector2(80, 48)
 layout_mode = 2
 theme = ExtResource("2_v7csn")
 text = "Clear"
-custom_minimum_size = Vector2(80, 48)
 
 [node name="HistoryPanel" type="PanelContainer" parent="MarginContainer/RootRow"]
 custom_minimum_size = Vector2(260, 0)
@@ -206,33 +206,33 @@ theme_override_constants/margin_right = 12
 theme_override_constants/margin_bottom = 12
 
 [node name="HistoryColumn" type="VBoxContainer" parent="MarginContainer/RootRow/HistoryPanel/HistoryMargin"]
+custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 size_flags_vertical = 3
 theme = SubResource("Theme_r2giv")
 theme_override_constants/separation = 12
-custom_minimum_size = Vector2(0, 200)
 
 [node name="HistoryTitle" type="Label" parent="MarginContainer/RootRow/HistoryPanel/HistoryMargin/HistoryColumn"]
+custom_minimum_size = Vector2(0, 32)
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
 text = "히스토리"
-custom_minimum_size = Vector2(0, 32)
 
 [node name="HistoryScroll" type="ScrollContainer" parent="MarginContainer/RootRow/HistoryPanel/HistoryMargin/HistoryColumn"]
+custom_minimum_size = Vector2(0, 160)
 layout_mode = 2
 size_flags_vertical = 3
 follow_focus = true
-custom_minimum_size = Vector2(0, 160)
 
 [node name="HistoryList" type="VBoxContainer" parent="MarginContainer/RootRow/HistoryPanel/HistoryMargin/HistoryColumn/HistoryScroll"]
+custom_minimum_size = Vector2(0, 160)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_constants/separation = 8
-custom_minimum_size = Vector2(0, 160)
 
 [node name="BtnHistoryClear" type="Button" parent="MarginContainer/RootRow/HistoryPanel/HistoryMargin/HistoryColumn"]
+custom_minimum_size = Vector2(80, 48)
 layout_mode = 2
 theme = ExtResource("2_v7csn")
 text = "기록 비우기"
-custom_minimum_size = Vector2(80, 48)
